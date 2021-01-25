@@ -14,9 +14,15 @@ It's a markdown document. You can pipe the result in a CLI markdown interpreter 
 
 ```curl -s https://0x7.be | mdcat```
 
+If you really need a HTML version of this page, [here you go](https://0x7.be/index.html)
+
 ### Generate a short url
 
-That's a WIP
+```curl -F'url=https://ruby-lang.org' http://0x7.be/u```
+
+### Followe a short url
+
+```curl -L https://0x7.be/u/:slug```
 
 ### Host a text file
 
